@@ -15,29 +15,41 @@
 html,
 body {
     background-color: #3a3936;
-    margin: 10px;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     text-align: center;
-    align-content: center;
-    font-size: 5vw;
-    color: honeydew;
+    font-size: 3vw;
+    color: rgb(240, 255, 240);
     font-weight: bolder;
     text-decoration: underline;
-    border: solid 10px honeydew;
-    margin-bottom: 5px;
+    border: solid 2px honeydew;
+    margin: 0px 0px 5px 0px ;
+    
+    width: 100%;
+
 }
 
+.image-h {
+    background-color: rgb(34, 34, 32);
+    background: size 100%;
+    ;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
 
 .container {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-auto-rows: 125px;
     grid-auto-flow: dense;
 }
+
 .container>div:hover {
     transform: scale(130%);
     transition: 600ms;
@@ -47,17 +59,12 @@ header {
 .horizontal {
     grid-column: span 2;
 }
-.horizontal:hover{
-    transform: scale(150%);
-}
+
 
 .vertical {
     grid-row: span 2;
 }
-.vertical:hover{
-    transform: scale(325%);
-    
-}
+
 .big {
     grid-column: span 2;
     grid-row: span 2;
